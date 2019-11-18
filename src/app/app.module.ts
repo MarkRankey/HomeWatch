@@ -7,18 +7,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { AddADeviceComponent } from './components/addadevice/addadevice.component';
+import { DeviceDisplayComponent } from './components/devicedisplay/devicedisplay.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   {path: 'overview', component: OverviewComponent},
-  {path: 'settings', component: SettingsComponent}
+  {path: 'settings', component: SettingsComponent},
+  {path: 'addadevice', component: AddADeviceComponent},
+  {path: 'devicedisplay', component: DeviceDisplayComponent}
+
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     OverviewComponent,
-    SettingsComponent
+    SettingsComponent,
+    AddADeviceComponent,
+    DeviceDisplayComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
