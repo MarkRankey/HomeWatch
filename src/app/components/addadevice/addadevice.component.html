@@ -1,0 +1,31 @@
+<head>
+
+
+
+
+</head>
+
+
+<h2>Please fill out the Required Information to add a Device</h2>
+
+<form action="/PLACEHOLDER.php">
+
+<!--AS SOON AS WE CAN LINK TO DATABASE, CHANGE PLACEHOLDER-->
+
+Device Name:<br>
+<input type="text" name="devicename" value="What is the Name of the Device?">
+<br>
+Device Owner:<br>
+<input type="text" name="deviceowner" value="Whose Device is this?">
+<br>
+Device MAC Address:<br>
+<input required pattern="^([0-9A-Fa-f]{2}[:-]){5}([0-9A-FA-f]{2})$" name="devicemacaddres" value="01-23-45-67-89-01"><br>
+
+<!--CHANGE TO INCLUDE LETTERS, HEXIDECIMAL VALUE-->
+
+
+<input type="submit" name = "addadevicesubmit "value="Add Device">
+
+<!--SUBMISSION BUTTON SHOULD SUBMIT DATA AND LINK TO NEW PAGE DISPLAYING THE DEVICE-->
+
+</form>
